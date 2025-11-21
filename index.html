@@ -15,7 +15,7 @@
         if (loginTime) {
             const currentTime = Date.now();
             const hoursPassed = (currentTime - loginTime) / (1000 * 60 * 60);
-            if (hoursPassed > 1) {
+            if (hoursPassed > 2) {
                 sessionStorage.removeItem('isAuthenticated');
                 localStorage.removeItem('loginTime');
                 window.location.href = 'login.html';
@@ -145,6 +145,7 @@
                 <li>Optimasi & Revisi Script</li>
                 <li>Add 9 Tema Custom Loginpage All Tema</li>
                 <li>Add Netmonitor MOD</li>
+                <li>add x-tunnel | run di terminal</li>
                 <li>Any other bugs? Let me know if you find any...</li>
             </ul>
             <h3>19.08.2025</h3>
